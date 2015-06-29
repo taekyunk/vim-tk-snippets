@@ -1,3 +1,23 @@
 snippet ic
 	\centerline{\includegraphics[height=\textwidth]{1:figure/img.png}}
 
+snippet header default yaml header for pandoc markdown
+	---
+	title: ${1:`expand('%:t')`}
+	author: ${2:Taekyun (T.K.) Kim}
+	date: ${3:`strftime("%Y/%m/%d")`}
+	geometry: margin=1.2in
+	fontsize: 12pt
+	numbersections: ${4:false}
+	---
+
+snippet headerb header for beamer
+	---
+	title: ${1:`expand('%:t')`}
+	author: ${2:Taekyun (T.K.) Kim}
+	date: ${3:`strftime("%Y/%m/%d")`}
+	standalone: true
+	theme: ${4:Frankfurt}
+	numbersections: ${5:false}
+	---
+
