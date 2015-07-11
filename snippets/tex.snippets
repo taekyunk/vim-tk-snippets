@@ -1,63 +1,30 @@
 # Note: in *.snippets, need to use tab instead of space!
-# Enumerate
-snippet enum
-	\begin{enumerate}
-		\item ${1}
-	\end{enumerate}
-# Itemize
-snippet item
-	\begin{itemize}
-		\item ${1}
-	\end{itemize}
-# Description
-snippet desc
-	\begin{description}
-		\item[${1}] ${2}
-	\end{description} 
-snippet i
-	\item ${1}
-# \begin{}...\end{}
-snippet begin
-	\begin{${1:env}}
-		${2}
-	\end{$1}
-# \begin{}...\end{} with option
-snippet begino
-	\begin{${1:env}}${2}
-		${3}
-	\end{$1}
-# Equation
-snippet eq
-	\begin{equation}
-		${1}
-	\end{equation}
-# Unnumbered Equation
-snippet \
-	\\[
-		${1}
-	\\]    
+
 # array	
 snippet arr
 	\begin{array}{${1}}
 		${2}
 	\end{array}
-# beamer 
-snippet frame
+# beamer frame
+snippet bframe
 	\begin{frame}
 		\frametitle{${1:Title Here}}
 		${2:Content}
 	\end{frame}
-snippet frames
+# beamer frame with subtitle
+snippet bframes
 	\begin{frame}
 		\frametitle{${1:Title}}
 		\framesubtitle{${2:Subtitle}}
 		${3:Content}
 	\end{frame}
-snippet block
+# beamer block
+snippet bblock
 	\begin{block}{${1}}
 		${2}
 	\end{block}
-snippet c2
+# beamer 2 column 
+snippet b2c
 	\begin{columns}
 		\begin{column}{${1:0.5}\textwidth}
 			${3}
@@ -66,7 +33,8 @@ snippet c2
 			${4}
 		\end{column}
 	\end{columns}
-snippet c3
+# beamer 3 column
+snippet b3c
 	\begin{columns}
 		\begin{column}{${1:0.33}\textwidth}
 			${4}
@@ -78,28 +46,7 @@ snippet c3
 			${6}
 		\end{column}
 	\end{columns}
-
+# include graphics
 snippet ig
 	\includegraphics[${1:width}=${2:\textwidth}]{${3}}
-
-# Section
-snippet sec
-	\section{${1:section name}} 
-	${3}
-# Sub Section
-snippet ss
-	\subsection{${1:subsection name}} 
-	${3}
-# Sub Sub Section
-snippet sss
-	\subsubsection{${1:subsubsection name}} 
-	${3}
-# Paragraph
-snippet par
-	\paragraph{${1:paragraph name}} 
-	${3}
-# Sub Paragraph
-snippet spar
-	\subparagraph{${1:subparagraph name}} 
-	${3}
 
