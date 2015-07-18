@@ -7,7 +7,6 @@ snippet header default yaml header for pandoc markdown
 	fontsize: 12pt
 	numbersections: ${4:false}
 	---
-
 snippet headerb header for beamer
 	---
 	title: ${1:`expand('%:t')`}
@@ -17,4 +16,10 @@ snippet headerb header for beamer
 	theme: ${4:Frankfurt}
 	numbersections: ${5:false}
 	---
-
+snippet headerr header for rmd
+	---
+	title: ${1:`expand('%:t')`}
+	author: ${2:Taekyun (T.K.) Kim}
+	date: ${3:`strftime("%Y/%m/%d")`}
+	output: html_document
+	---
